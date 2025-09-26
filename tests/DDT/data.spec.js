@@ -1,0 +1,35 @@
+import { test } from "@playwright/test";
+import { celldata } from "../../Utility/exceldata";
+import { rowdata, alldata } from "../../Utility/exceldata";
+import testdata from "../../Utility/testdata.json"
+import { qsplogin } from "../../POM_Pages/qsplogin"
+
+test('Read Excel Cell data', async () => {
+    const cell = new celldata()
+    let cellvalue = await cell.getCellValue('TestData/TestData.xlsx', 'Sheet1', 1, 2)
+    console.log(cellvalue)
+
+});
+
+
+test('Read Excel row data', async()=>{
+    const row = new rowdata()
+    const rowdatavalue = await row.getRowValue('TestData/TestData.xlsx', 'Sheet1')
+    console.log(rowdatavalue)
+})
+
+test('Read All the data in a sheet', async()=>{
+    const excel = new alldata()
+    const total = await excel.getalldata('TestData/TestData.xlsx', 'Sheet1')
+    console.log(total)
+})
+
+// qspiders demoapps login
+testdata.forEach(({url, name, email, password}, index) => {
+    test(`json loop execution ${index}`, async({page})=> {
+        let login = new qsplogin(page)
+        await login.accountcreate(url,name, email, password)
+        await page.waitForTimeout(2000)
+    })
+});
+
