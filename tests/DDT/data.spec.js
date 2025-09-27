@@ -1,8 +1,13 @@
 import { test } from "@playwright/test";
 import { celldata } from "../../Utility/exceldata";
 import { rowdata, alldata } from "../../Utility/exceldata";
-import testdata from "../../Utility/testdata.json"
-import { qsplogin } from "../../POM_Pages/qsplogin"
+import testdata from "../../TestData/testdata.json";
+import { qsplogin } from "../../POM_Pages/qsplogin";
+import { saucedemo } from "../../POM_Pages/saucedemo";
+import saucedemologin from "../../TestData/sausedemologin.json";
+import flocusapplogin from "../../TestData/flocusapplogin.json";
+import { flocusapp } from "../../POM_Pages/flocusapp";
+
 
 test('Read Excel Cell data', async () => {
     const cell = new celldata()
@@ -33,3 +38,17 @@ testdata.forEach(({url, name, email, password}, index) => {
     })
 });
 
+// sause demo
+saucedemologin.forEach(({url, username, password}, index) => {
+    test(`sause login ${index}`, async({page}) => {
+        let sauce = new saucedemo(page)
+        await sauce.loggin(url, username, password)
+    })
+});
+
+flocusapplogin.forEach(({url, username, email, password}, index) => {
+    test(`demoapp_login ${index}`, async({page}) => {
+        let sauce = new flocusapp(page)
+        await sauce.loggin(url, username, email, password)
+    })
+});
