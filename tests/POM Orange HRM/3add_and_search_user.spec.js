@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";    
+import { test } from "@playwright/test";    
 import { Add_user } from "../../POM_Pages/Add_user";
 import { Loginpage } from "../../POM_Pages/Loginpage";
 import { Sidebar } from "../../POM_Pages/Sidebar";
@@ -120,5 +120,4 @@ oranagehrmadd_delete.forEach(({un, pass, role, empname, status, username, passwo
     const logout = new Logoutpage(page)
     await logout.loggingout()
     });
-})
-
+});
