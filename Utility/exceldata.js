@@ -47,3 +47,19 @@ export class alldata{
     }
     
 }
+
+export class exceldata {
+  constructor(filePath, sheetName) {
+    this.filePath = filePath;
+    this.sheetName = sheetName;
+  }
+
+  async getCellValue(row, col) {
+    if (!this.workbook) {
+      this.workbook = new excel.Workbook();
+      await this.workbook.xlsx.readFile(this.filePath);
+      this.sheet = this.workbook.getWorksheet(this.sheetName);
+    }
+    return this.sheet.getRow(row).getCell(col).value;
+  }
+}

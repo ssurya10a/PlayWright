@@ -19,7 +19,6 @@ test('Switching Browser Window/Context', async({browser}) => {
     // storing the new page in a variable so can use it to do actions on new page 
     const poppage = await newpage 
 
-
     // doing actions on new page
     await poppage.getByRole('button', {name:"Add to Cart"}).click()
 

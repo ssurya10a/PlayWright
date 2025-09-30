@@ -46,9 +46,11 @@ saucedemologin.forEach(({url, username, password}, index) => {
     })
 });
 
-flocusapplogin.forEach(({url, username, email, password}, index) => {
+flocusapplogin.forEach(({url, username, email, password, describe}, index) => {
     test(`demoapp_login ${index}`, async({page}) => {
+        test.slow()
         let sauce = new flocusapp(page)
-        await sauce.loggin(url, username, email, password)
+        await sauce.loggin(url, username, email, password, describe)
     })
 });
+

@@ -3,30 +3,35 @@
         "url" : "https://app.flocus.com/",
         "username" : "songoku",
         "email" : "songoku@gmail.com",
-        "password" : "Son9Gokuiac"
+        "password" : "Son9Gokuiac",
+        "describe" : "Working Professional"
     },
     {
         "url" : "https://app.flocus.com/",
         "username" : "kappa",
         "email" : "kappa@gmail.com",
-        "password" : "Son9Gokuiac"
+        "password" : "Son9Gokuiac",
+        "describe" : "University/College Student"
     },
     {
         "url" : "https://app.flocus.com/",
         "username" : "victor",
         "email" : "vvictor@gmail.com",
-        "password" : "Son9Gokuiac"
+        "password" : "Son9Gokuiac",
+        "describe" : "Graduate Student"
     },
     {
         "url" : "https://app.flocus.com/",
         "username" : "vonkrona",
         "email" : "vonkrona@gmail.com",
-        "password" : "Son9Gokuiac"
+        "password" : "Son9Gokuiac",
+        "describe" :"Self-Employed"
     },
     {
         "url" : "https://app.flocus.com/",
         "username" : "vonvise",
         "email" : "vonvise@gmail.com",
-        "password" : "Son9Gokuiac"
+        "password" : "Son9Gokuiac",
+        "describe" : "Self-Employed"
     }
 ]

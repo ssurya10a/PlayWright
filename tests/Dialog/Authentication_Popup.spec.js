@@ -19,4 +19,3 @@ test('Authentication Popup', async ({ browser }) => {
   // Click the Login link that triggers the authentication
   await page.locator('//a[text()="Login"]').click();
 });
-

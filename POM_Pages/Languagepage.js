@@ -1,3 +1,4 @@
+const { expect } = require('@playwright/test');
 exports.Languagepage =
 
 class language{
@@ -7,6 +8,7 @@ class language{
     }
 
     async select(){
+        await expect(this.name).toBeVisible()
         await this.name.click();
     }
 }
