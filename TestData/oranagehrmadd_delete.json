@@ -1,0 +1,52 @@
+[
+    {
+        "un" : "Admin",
+        "pass" : "admin123",
+        "role" : "Admin",
+        "empname" : "Peter Mac Anderson",
+        "status" : "Enabled",
+        "username" : "rntdkjv",
+        "password" : "kuvyig87tg8yg",
+        "confirmpassword" : "kuvyig87tg8yg"
+    },
+    {
+        "un" : "Admin",
+        "pass" : "admin123",
+        "role" : "ESS",
+        "empname" : "Peter Mac Anderson",
+        "status" : "Enabled",
+        "username" : "etnetn",
+        "password" : "jbgiug7g",
+        "confirmpassword" : "jbgiug7g"
+    },
+    {
+        "un" : "Admin",
+        "pass" : "admin123",
+        "role" : "ESS",
+        "empname" : "Peter Mac Anderson",
+        "status" : "Enabled",
+        "username" : "ehdsrt",
+        "password" : "jkvhjhbv79y",
+        "confirmpassword" : "jkvhjhbv79y"
+    },
+    {
+        "un" : "Admin",
+        "pass" : "admin123",
+        "role" : "Admin",
+        "empname" : "Peter Mac Anderson",
+        "status" : "Enabled",
+        "username" : "wgtgwgs",
+        "password" : "hvjhv887",
+        "confirmpassword" : "hvjhv887"
+    },
+    {
+        "un" : "Admin",
+        "pass" : "admin123",
+        "role" : "ESS",
+        "empname" : "Peter Mac Anderson",
+        "status" : "Enabled",
+        "username" : "wrstrh",
+        "password" : "songoku9898",
+        "confirmpassword" : "songoku9898"
+    }
+]
