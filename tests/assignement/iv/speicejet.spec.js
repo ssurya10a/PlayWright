@@ -29,4 +29,6 @@ test.slow()
     await from.fill('del')
 
     await page.keyboard.type('blr')
+
+    await page.waitForURL()
 })
