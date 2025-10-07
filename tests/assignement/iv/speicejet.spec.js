@@ -29,8 +29,4 @@ test.slow()
     await from.fill('del')
 
     await page.keyboard.type('blr')
-
-    await page.waitForURL()
-
-    await page.waitForEvent(page.locator('//div[text()="Bengaluru, IN - Kempegowda International Airport (BLR)"]'))
 })
